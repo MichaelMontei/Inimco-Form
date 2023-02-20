@@ -1,0 +1,23 @@
+{{ UserForm.value | json }}
+
+<div style="background-color: rgb(221, 224, 203); height:max-content">
+  <h1 style="display: flex; justify-content: center; text-decoration-line: underline;">Inimco Assignment</h1>
+
+  <h2 class="container" style="display: flex; justify-content: center; margin-top: 100px;">{{ title }}</h2>
+  <div class="container" style="display: flex; justify-content: center; margin-top: 25px;">
+
+
+    <form #UserForm="ngForm" novalidate (submit)="getData(UserForm.value)">
+      <input required type="text" ngModel name="firstname" placeholder="First Name" />
+      <br /> <br />
+      <input required type="text" ngModel name="lastname" placeholder="Last Name" />
+      <br /> <br />
+      <textarea style="width: 190px; height: 100px;" class="social" required type="text" ngModel name="Social Skills" placeholder="Social Skills"></textarea>
+      <br /> <br />
+      <textarea style="width: 190px; height: 100px;" class="media" required type="text" ngModel name="Social Accounts" placeholder="Social Accounts"></textarea>
+      <br /> <br />
+      <button style="background-color: rgb(27, 116, 171) ; color: white; font-size: 16px; width: 100px; align-items: center; margin-left: 45px; border-radius: 5%;" class="button">Confirm</button>
+    </form>
+
+  </div>
+</div>
