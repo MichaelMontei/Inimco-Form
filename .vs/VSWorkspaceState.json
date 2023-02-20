@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Form",
+    "\\Form\\ClientApp",
+    "\\Form\\ClientApp\\src",
+    "\\Form\\ClientApp\\src\\app",
+    "\\Form\\ClientApp\\src\\app\\form"
   ],
   "PreviewInSolutionExplorer": false
 }
